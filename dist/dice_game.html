@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Dice game</title>
+</head>
+<body>
+    <div class="h-screen bg-yellow-100">
+        <div class="h-[60%] flex flex-row gap-3 px-[8rem] box-border pt-10">
+
+            <div class="w-[33.33%] h-full flex flex-col justify-start items-center">
+                <label id="playerOne" class="py-10 w-[40%] mb-[3rem] text-center text-2xl text-white bg-orange-400 rounded-sm">PLAYER 1</label><br>
+                <img src="#" alt="player dice" id="playerOneImage" class="w-[10rem] hidden">
+            </div>
+            
+            <div class="w-[33.33%] h-full flex flex-col justify-start items-center">
+                <label id="playerTwo" class="py-10 w-[40%] mb-[3rem] text-center text-2xl text-white bg-yellow-400 rounded-sm">PLAYER 2</label><br>
+                <img src="#" alt="player dice" id="playerTwoImage" class="w-[10rem] hidden">
+            </div>
+
+            <div class="w-[33.33%] h-full flex flex-col justify-start items-center">
+                <label id="playerThree" class="py-10 w-[40%] mb-[3rem] text-center text-2xl text-white bg-green-400 rounded-sm">PLAYER 3</label><br>
+                <img src="#" alt="player dice" id="playerThreeImage" class="w-[10rem] hidden">
+            </div>
+
+        </div>
+        
+        <div class="h-[40%] flex flex-row justify-center items-center">
+            <button class="text-white mx-5 p-5 bg-red-500 hover:bg-red-700 transition-colors duration-300 w-[20%] rounded-md" id="resultButton">ROLL</button>
+            <button class="text-white mx-5 p-5 bg-blue-500 hover:bg-blue-700 transition-colors duration-300 w-[20%] rounded-md" id="resetButton">RESET</button>
+        </div>
+
+    </div>
+
+    <script src="dice_game.js"></script>
+</body>
+</html>
